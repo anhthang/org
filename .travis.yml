@@ -3,9 +3,9 @@ sudo: false
 cache: bundler
 rvm:
   - 2.4.2
-before_install:
-  - gem update --system
-  - gem update --remote bundler
+# before_install:
+#   - gem update --system
+#   - gem update --remote bundler
 before_script:
   - git config --global user.name "$(git --no-pager show --no-patch --format='%an')"
   - git config --global user.email "$(git --no-pager show --no-patch --format='%ae')"
