@@ -5,11 +5,9 @@ description: "Host ASP.NET Core on Linux with Nginx"
 keywords: ""
 date: 2018-02-03
 comments: false
-categories: "docker"
+categories: "aspnetcore linux nginx"
 permalink: 2018/02/03-host-asp-net-core-on-linux-with-nginx
 ---
-
-# Host ASP.NET Core on Linux with Nginx
 
 > This is a helper document guide how to setup, config and deploy an .NET Core Web Engine Hosting on an Ubuntu Server.
 
@@ -17,24 +15,24 @@ permalink: 2018/02/03-host-asp-net-core-on-linux-with-nginx
 
 Run below command and input password
 
-```sh
+```bash
 ssh username@hosting/ip
 ```
 You can copy your local ssh key to server and no need password to login next time
-```sh
+```bash
 ssh-copy-id -i .ssh/id_rsa username@hosting/ip
 ```
 
 ### Install Nginx
 
-```sh
+```bash
 sudo apt-get update
 sudo apt-get install nginx
 ```
 
 Since Nginx was installed for the first time, explicitly start it by running:
 
-```sh
+```bash
 sudo systemctl start nginx
 ```
 
@@ -42,7 +40,7 @@ sudo systemctl start nginx
 
 To config Nginx as a reserve proxy to forward request to ASP.NET Core app, modify `/etc/nginx/sites-available/default` and replace or create a new sites-available
 
-```sh
+```bash
 cd /etc/nginx/sites-available
 touch site_name
 sudo nano site_name
@@ -50,7 +48,7 @@ sudo nano site_name
 
 with the following contents
 
-```sh
+```bash
 upstream site_name_svc  {
     server 127.0.0.1:5432;
 }
@@ -76,19 +74,19 @@ This Nginx config file forwards incoming public traffic from port `80` to port `
 
 Link your site to `sites-enabled`, then you can easy switch off site by remove syslink here and re-use again without re-config
 
-```sh
+```bash
 sudo ln -s /etc/nginx/sites-available/kkday-test /etc/nginx/sites-enabled
 ```
 
 Verify your config files
 
-```sh
+```bash
 sudo nginx -t
 ```
 
 If successful, reload `Nginx` to pickup the changes
 
-```sh
+```bash
 sudo service nginx reload
 ```
 
@@ -98,7 +96,7 @@ Use `systemd` and create a service file to start and monitor the underlying web 
 
 Create service file
 
-```sh
+```bash
 sudo nano /etc/systemd/system/service_name.service
 ```
 
@@ -123,13 +121,13 @@ _Note: If the user www-data isn't used by the configuration, the user defined he
 
 Save the file and enable the service.
 
-```sh
+```bash
 systemctl enable service_name.service
 ```
 
 Start the service and verify that it's running.
 
-```sh
+```bash
 systemctl start service_name.service
 systemctl status service_name.service
 ```
