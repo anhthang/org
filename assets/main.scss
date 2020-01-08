@@ -4,8 +4,8 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: Bitter, Ubuntu, "Source Sans Pro", sans-serif;
-$monospace-font-family: "Source Code Pro", Consolas, "Courier New", monospace;
+$base-font-family: Bitter, "Apple SD Gothic Neo", AppleGothic, NanumBarunGothic, "Malgun Gothic", Dotum, sans-serif;
+$monospace-font-family: Monaco, Menlo, Consolas, "Courier New", DotumChe, monospace;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -17,9 +17,9 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2568ba;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       #757575;
+$grey-color-light: lighten($grey-color, 45%);
+$grey-color-dark:  darken($grey-color, 20%);
 
 // Width of the content area
 $content-width:    800px;

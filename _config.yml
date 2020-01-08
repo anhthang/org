@@ -25,9 +25,10 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - README.md
-  - LICENSE
+  - LICENSE.txt
   - CHANGELOG.md
   - jekyll-whiteglass.gemspec
+  - screenshot.png
   - vendor
 
 # Social media
@@ -50,7 +51,7 @@ excerpt_separator: "<!-- more -->"
 
 # Outputting
 permalink: /:year/:month/:day/:title/
-paginate_path: /page/:num/
+paginate_path: /posts/:num/
 paginate: 5
 
 # Markdown settings
@@ -66,6 +67,8 @@ kramdown:
 jekyll-archives:
   enabled:
     - categories
+    - tags
   layout: category_archives
   permalinks:
     category: /categories/:name/
+    tag: /tags/:name/
