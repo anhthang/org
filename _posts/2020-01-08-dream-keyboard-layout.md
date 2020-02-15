@@ -21,7 +21,7 @@ GB:
 
 ![Think65]
 
-* [E6.5] (https://geekhack.org/index.php?topic=99655.0)
+* [E6.5](https://geekhack.org/index.php?topic=99655.0)
 
 Full album: https://imgur.com/a/ZsSecSo
 
