@@ -3,10 +3,10 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
+title: Anh Thang
 email:
-description: A simple and awesome blog theme powered by jekyll.
-url: # the base hostname & protocol for your site
+description: Something to remember...
+url: "https://anhthang.org" # the base hostname & protocol for your site
 keywords: ["blog", "jekyll"]
 
 #
@@ -14,7 +14,7 @@ keywords: ["blog", "jekyll"]
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          Asia/Ho_Chi_Minh
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,28 +33,28 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
+  name: Anh Thang Bui
   avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
+  job: "Node.js Developer"
+  bio: "Something to remember..."
+  email: "buianhthang89@gmail.com"
   disqus-shortname:
-  twitter: #username
-  facebook: #username
+  twitter: anhthangbui
+  facebook: congiothienbinh
   google:
     plus: #username
-    analytics:
+    analytics: UA-108075000-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: buianhthang
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   skype: #username
   xing: #username
-  instagram: #username
+  instagram: anhthangbui
   lastfm: #username
   tumblr: #username
   pinterest: #username
