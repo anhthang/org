@@ -1,8 +1,8 @@
 - name: joi-array-extensions
-  descr: "v1.1.2 - Joi extensions for extra array rules."
+  descr: "Joi extensions for extra array rules."
   image:
   github: https://github.com/buianhthang/joi-array-extensions
 - name: pino-redis
-  descr: "v1.0.3 - load pino logs into redis"
+  descr: "load pino logs into redis"
   image:
   github: https://github.com/buianhthang/pino-redis
