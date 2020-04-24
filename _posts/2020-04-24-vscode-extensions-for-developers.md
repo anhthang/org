@@ -4,7 +4,7 @@ title: "VSCode extensions for developers"
 description: "VSCode extensions for developers"
 date: 2020-04-24
 comments: false
-categories: [mechanical keyboard]
+categories: [code extensions]
 permalink: 2020/04/24-vscode-extensions-for-developers
 ---
 

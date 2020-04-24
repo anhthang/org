@@ -4,7 +4,7 @@ title: "XML to JSON - VSCode extension"
 description: "Convert XML from clipboard or current document/selection to JSON"
 date: 2017-11-03
 comments: false
-categories: [vscode extensions, xml2json, xmlbuilder]
+categories: [code extensions, xml2json, xmlbuilder]
 link: https://marketplace.visualstudio.com/items?itemName=buianhthang.xml2json
 permalink: 2017/11/03/xml-to-json-vscode-extension
 ---

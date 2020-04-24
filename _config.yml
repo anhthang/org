@@ -34,7 +34,7 @@ kramdown:
 #
 owner:
   name: Anh Thang Bui
-  avatar: avatar.jpeg
+  avatar: avatar.jpg
   job: "Node.js Developer"
   bio: "Something to remember..."
   email: "buianhthang89@gmail.com"
@@ -51,7 +51,7 @@ owner:
   github: buianhthang
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: buianhthang
   skype: #username
   xing: #username
   instagram: anhthangbui
