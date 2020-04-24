@@ -5,7 +5,7 @@ description: "First contribution"
 keywords: "open source"
 date: 2017-10-14
 comments: false
-categories: open-source
+categories: [open source]
 permalink: 2017/10/14/first-contribution
 ---
 

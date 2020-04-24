@@ -2,10 +2,9 @@
 layout: post
 title: "Dreaming keyboard layout"
 description: "Dreaming keyboard layout"
-keywords: ""
 date: 2020-01-08
 comments: false
-categories: "mechanical keyboard"
+categories: [mechanical keyboard]
 permalink: 2020/01/08-dream-mechanical-keyboard-layout
 ---
 

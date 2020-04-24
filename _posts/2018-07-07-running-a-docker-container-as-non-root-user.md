@@ -2,10 +2,9 @@
 layout: post
 title: "Running a Docker container as non-root user"
 description: "Running a Docker container as non-root user"
-keywords: ""
 date: 2018-07-07
 comments: false
-categories: "docker container"
+categories: [docker]
 permalink: 2018/07/07-running-a-docker-container-as-non-root-user
 ---
 
