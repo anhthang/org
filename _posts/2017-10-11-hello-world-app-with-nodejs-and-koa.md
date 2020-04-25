@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Hello World! app with Node.js and Koa"
-description: "Hello World! app with Node.js and Koa"
-keywords: "hello world"
 date: 2017-10-11
 comments: false
 categories: [hello world]

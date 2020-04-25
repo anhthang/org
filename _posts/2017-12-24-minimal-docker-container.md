@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Minimal Docker container"
-description: "Minimal Docker container"
 date: 2017-12-24
 comments: false
 categories: [docker]

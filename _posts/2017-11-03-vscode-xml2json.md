@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "XML to JSON - VSCode extension"
-description: "Convert XML from clipboard or current document/selection to JSON"
 date: 2017-11-03
 comments: false
 categories: [code extensions, xml2json, xmlbuilder]

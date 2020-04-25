@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "ingress-nginx controller not work for fanout configuration"
-description: "ingress-nginx controller not work for fanout configuration"
 date: 2019-04-01
 comments: false
 categories: [nginx, nginx ingress, kubernetes]

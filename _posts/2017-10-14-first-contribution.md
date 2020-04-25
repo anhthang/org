@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "pino-redis - first contribution"
-description: "First contribution"
-keywords: "open source"
 date: 2017-10-14
 comments: false
 categories: [open source]

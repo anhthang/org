@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Property lookup on booleans"
-description: "Property lookup on booleans"
 date: 2017-10-29
 comments: false
 categories: [tip trick]
