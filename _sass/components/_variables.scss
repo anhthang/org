@@ -3,7 +3,7 @@
  */
 
 // Google font import
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,400,400italic|Roboto+Mono);
+@import url(https://fonts.googleapis.com/css?family=Nunito:600,400,400italic|Fira+Code);
 
 // Custom variables
 
@@ -21,9 +21,9 @@ $border-width:               .0625rem !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:     "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:     "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:      "Roboto Mono", "Courier New", monospace !default;
+$font-family-monospace:      "Fira Code", "Courier New", monospace !default;
 $font-family-base:           $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
