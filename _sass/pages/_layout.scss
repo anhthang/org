@@ -1,12 +1,15 @@
 /* LAYOUT CSS */
 .cover {
-  background-color: $background-color;
+  background-color: darken($background-color, 24%);
   position: fixed;
   text-align: center;
   width: 100%;
   min-height: 400px;
   padding: 30px 15px 20px;
   z-index: 1;
+  @include dark-mode() {
+    background-color: $dark-background-color;
+  }
   @include media-query($small-screen) {
     background-position: center;
     padding: 30px;
@@ -46,6 +49,9 @@
   .author_bio {
     font-size: 90%;
     display: block;
+  }
+  @include dark-mode() {
+    color: $dark-text-color;
   }
   @include media-query($medium-screen) {
     text-align: right;

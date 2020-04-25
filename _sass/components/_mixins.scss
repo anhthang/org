@@ -19,6 +19,14 @@
 }
 
 /**
+ * Dark mode
+ */
+
+ @mixin dark-mode {
+  @media (prefers-color-scheme: dark) { @content; }
+}
+
+/**
  * Media query
  */
 
