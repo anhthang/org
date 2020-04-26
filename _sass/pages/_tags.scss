@@ -30,6 +30,13 @@ ul.tag-cloud {
         &:focus {
           color: lighten($text-color, 24%);
         }
+        @include dark-mode() {
+          color: $dark-text-color;
+          &:hover,
+          &:focus {
+            color: lighten($dark-text-color, 24%);
+          }
+        }
       }
     }
   }

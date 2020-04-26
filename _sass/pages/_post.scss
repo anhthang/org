@@ -183,72 +183,110 @@ a.read-more {
   }
 }
 .twitter {
-  background-color: #77bcf1;
+  background-color: $twitter;
   color: $white;
-  border-color: #77bcf1;
+  border-color: $twitter;
   &:visited {
     color: $white;
-    border-color: #77bcf1;
+    border-color: $twitter;
   }
   &:hover {
     background-color: $white;
-    color: #77bcf1;
-    border-color: #77bcf1;
+    color: $twitter;
+    border-color: $twitter;
+  }
+  @include dark-mode() {
+    background-color: $dark-background-color;
+    color: $twitter;
+    &:visited {
+      color: $white;
+      border-color: $twitter;
+    }
+    &:hover {
+      background-color: $twitter;
+      color: $white;
+      border-color: $twitter;
+    }
   }
 }
 .facebook {
-  background-color: #627aac;
+  background-color: $facebook;
   color: $white;
-  border-color: #627aac;
+  border-color: $facebook;
   &:visited {
     color: $white;
-    border-color: #627aac;
+    border-color: $facebook;
   }
   &:hover {
     background-color: $white;
-    color: #627aac;
-    border-color: #627aac;
+    color: $facebook;
+    border-color: $facebook;
   }
-}
-.google-plus {
-  background-color: #e36f60;
-  color: $white;
-  border-color: #e36f60;
-  &:visited {
-    color: $white;
-    border-color: #e36f60;
-  }
-  &:hover {
-    background-color: $white;
-    color: #e36f60;
-    border-color: #e36f60;
+  @include dark-mode() {
+    background-color: $dark-background-color;
+    color: $facebook;
+    &:visited {
+      color: $white;
+      border-color: $facebook;
+    }
+    &:hover {
+      background-color: $facebook;
+      color: $white;
+      border-color: $facebook;
+    }
   }
 }
 .hacker-news {
-  background-color: #f60;
+  background-color: $hacker-news;
   color: $white;
-  border-color: #f60;
+  border-color: $hacker-news;
   &:visited {
     color: $white;
-    border-color: #f60;
+    border-color: $hacker-news;
   }
   &:hover {
     background-color: $white;
-    color: #f60;
-    border-color: #f60;
+    color: $hacker-news;
+    border-color: $hacker-news;
+  }
+  @include dark-mode() {
+    background-color: $dark-background-color;
+    color: $hacker-news;
+    &:visited {
+      color: $white;
+      border-color: $hacker-news;
+    }
+    &:hover {
+      background-color: $hacker-news;
+      color: $white;
+      border-color: $hacker-news;
+    }
   }
 }
 .reddit {
-  background-color: #5f99cf;
+  background-color: $reddit;
   color: $white;
-  border-color: #5f99cf;
+  border-color: $reddit;
   &:visited {
     color: $white;
-    border-color: #5f99cf;
+    border-color: $reddit;
   }
   &:hover {
     background-color: $white;
-    color: #5f99cf;
-    border-color: #5f99cf;
+    color: $reddit;
+    border-color: $reddit;
+  }
+  @include dark-mode() {
+    background-color: $dark-background-color;
+    color: $reddit;
+    &:visited {
+      color: $white;
+      border-color: $reddit;
+    }
+    &:hover {
+      background-color: $reddit;
+      color: $white;
+      border-color: $reddit;
+    }
   }
 }
