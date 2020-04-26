@@ -18,7 +18,10 @@
 @import "components/grid";
 @import "components/typography";
 @import "components/buttons";
-@import "components/ayu-mirage";
+@import "components/ayu-light";
+@media (prefers-color-scheme: dark) {
+	@import "components/ayu-mirage";
+}
 
 // Pages styling
 @import "pages/layout";
