@@ -5,7 +5,7 @@
  */
 
  $accent: #ffcc66;
- $background: #1f2430;
+ $background: #262d35;
  $foreground: #cbccc6;
  $ui: #707a8c;
  $tag: #5ccfe6;
@@ -23,13 +23,13 @@
 
 pre, code {
   font-family: $font-family-monospace;
-  color: #525252;
+  color: #8a8484;
   font-size: 0.9em;
-  background-color: #f8f8f8;
+  background-color: #262d35;
   font-size: ($font-size-base - 3);
 }
 code {
-  color: #e96900;
+  color: #e83e8c;
   border-radius: 2px;
   white-space: nowrap;
 }
@@ -50,7 +50,7 @@ pre code {
   white-space: pre;
   overflow: auto;
   word-wrap: normal;
-  color: #525252;
+  color: #8a8484;
   span {
     word-break: break-all;
   }
@@ -62,7 +62,7 @@ pre code {
     position: relative;
   }
   pre code {
-    color: #525252;
+    color: #8a8484;
     &::before {
       content: attr(data-lang);
       position: absolute;
