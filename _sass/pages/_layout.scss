@@ -8,7 +8,7 @@
   padding: 30px 15px 20px;
   z-index: 1;
   @include dark-mode() {
-    background-color: $dark-background-color;
+    background-color: darken($dark-background-color, 6);
   }
   @include media-query($small-screen) {
     background-position: center;

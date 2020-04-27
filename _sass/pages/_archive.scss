@@ -8,9 +8,9 @@
       left: -2px;
       height: 100%;
       width: 4px;
-      background: $background-color;
+      background: darken($background-color, 6);
       @include dark-mode() {
-        background-color: $dark-background-color;
+        background-color: darken($dark-background-color, 6);
       }
     }
     &:after {

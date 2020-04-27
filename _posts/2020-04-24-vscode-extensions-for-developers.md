@@ -11,8 +11,6 @@ permalink: 2020/04/24-vscode-extensions-for-developers
 
 **Here are my top VSCode extensions that every software developer must have:**
 
-<!--more-->
-
 1. [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 
 Improve your code commenting by annotating with alert, informational, TODOs, and more!
@@ -49,7 +47,7 @@ Prettify ugly JSON inside VSCode
 
 Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.
 
-![Settings Sync](https://shanalikhan.github.io/img/login-with-github.png)
+<!-- ![Settings Sync](https://shanalikhan.github.io/img/login-with-github.png) -->
 
 VSCode also has [Preferences Sync](https://code.visualstudio.com/docs/editor/settings-sync), it still in preview and only available on Insiders. We can use this once moved to Stable.
 
