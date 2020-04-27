@@ -46,7 +46,7 @@ sudo nano site_name
 
 with the following contents
 
-```bash
+```nginx
 upstream site_name_svc  {
     server 127.0.0.1:5432;
 }
@@ -97,6 +97,7 @@ Create service file
 ```bash
 sudo nano /etc/systemd/system/service_name.service
 ```
+and write the content like below
 
 ```ini
 [Unit]

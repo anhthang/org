@@ -21,7 +21,7 @@ Refer to [#3174 (comment)](https://github.com/kubernetes/ingress-nginx/pull/3174
 
 From the documentation page at https://kubernetes.io/docs/concepts/services-networking/ingress/, you can define a fanout configuration routes traffic from a single IP address to more than one service, based on the HTTP URI being requested. An Ingress allows you to keep the number of loadbalancers down to a minimum.
 
-```
+```yml
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -45,7 +45,7 @@ spec:
 
 However, it's not work as expected if you have updated to the version 0.22.0 or newer. You need to change these annotations:
 
-```
+```yml
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:

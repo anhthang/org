@@ -14,7 +14,7 @@ I found this script and it works with below steps:
 - Stop your problem instance
 - Paste this script in `Instance Settings > View/Change User Data`
 
-```
+```sh
 Content-Type: multipart/mixed; boundary="//"
 MIME-Version: 1.0
 --//
