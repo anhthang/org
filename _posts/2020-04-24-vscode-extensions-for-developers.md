@@ -7,7 +7,11 @@ categories: [code extensions]
 permalink: 2020/04/24-vscode-extensions-for-developers
 ---
 
+> Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity)
+
 **Here are my top VSCode extensions that every software developer must have:**
+
+<!--more-->
 
 1. [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 
@@ -46,6 +50,8 @@ Prettify ugly JSON inside VSCode
 Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.
 
 ![Settings Sync](https://shanalikhan.github.io/img/login-with-github.png)
+
+VSCode also has [Preferences Sync](https://code.visualstudio.com/docs/editor/settings-sync), it still in preview and only available on Insiders. We can use this once moved to Stable.
 
 8. [XML to JSON](https://marketplace.visualstudio.com/items?itemName=buianhthang.xml2json)
 
