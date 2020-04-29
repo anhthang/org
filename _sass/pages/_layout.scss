@@ -56,7 +56,7 @@
   @include media-query($medium-screen) {
     text-align: right;
     margin: 0 auto;
-    padding: 0 0px 80px;
+    padding: 50% 0px 80px;
   }
 }
 .social-links {
