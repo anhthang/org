@@ -16,8 +16,8 @@
   }
   @include media-query($medium-screen) {
     height: 100vh;
-    position: initial;
-    width: 100%;
+    position: fixed;
+    width: 25%;
   }
 }
 .cover-card {
