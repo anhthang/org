@@ -3,7 +3,7 @@ layout: post
 title: "Property lookup on booleans"
 date: 2017-10-29
 comments: false
-categories: [tip trick]
+categories: [programing]
 link: https://github.com/babel/babel/commit/1c0a8eb14b69cca00aa96db65b69d0848013c680
 permalink: 2017/10/29/property-lookup-on-booleans
 ---

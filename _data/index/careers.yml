@@ -1,6 +1,14 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name: KMSoft
+  link: https://kmsoft.vn/
+  date: Apr 2020 - Now
+  job: Senior Software Developer
 - name: GoQuo
   link: https://goquo.com/
-  date: Mar 2015 - Mar 2020
+  date: Jan 2018 - Mar 2020
   job: Team Leader
+- name: GoQuo
+  link: https://goquo.com/
+  date: Mar 2015 - Dec 2017
+  job: Node.js Developer

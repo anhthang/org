@@ -1,38 +1,55 @@
----
-layout: default
----
-<div class="row">
-    <div class="col l7">
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="cover">
+        {% include sidebar.html %}
+      </div>
+    </div>
+    <div class="col s12 m9 l9">
+      <div class="post-listing">
         <div class="row">
-            <div class="col">
-                {% include sections/about.html %}        
+          <div class="col l7" style="margin-left: 0;">
+            <div class="row">
+              <div class="col">
+                {% include sections/about.html %}
+              </div>
             </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
+
+            <div class="row">
+              <div class="col">
                 {% include sections/projects.html %}
+              </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col">
+            <div class="row">
+              <div class="col">
                 {% include sections/open_sources.html %}
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
 
-    <div class="col l4 offset-l1">
-        <div class="row">
-            {% include sections/skills.html %}    
+          <div class="col l4 offset-l1">
+            <div class="row">
+              {% include sections/skills.html %}
+            </div>
+            <div class="row">
+              {% include sections/career.html %}
+            </div>
+            <div class="row">
+              {% include sections/education.html %}
+            </div>
+          </div>
         </div>
-        <div class="row">
-            {% include sections/career.html %}    
-        </div>
-        <div class="row">
-            {% include sections/education.html %}    
-        </div>
+        {% include footer.html %}
+      </div>
     </div>
-    
+  </div>
+  {% include js.html %}
+</body>
 
-</div>
+</html>

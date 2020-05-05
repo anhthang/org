@@ -112,19 +112,23 @@ Now I want VSCode to format my code following ESLint, Prettier config whenever I
 
 Go to VSCode Preferences then add the following settings:
 
-```jsonc
+* Set Prettier is default formatter and config for all JavaScript projects
+```json
 {
-    // default prettier config for all projects
     "prettier.semi": false,
     "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
-    // always fix on save
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    // always use Prettier config to format JavaScript
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
+```
+
+* Let VSCode always fix after saving a file
+```json
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
     }
 }
 ```
