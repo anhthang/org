@@ -112,18 +112,20 @@ Now I want VSCode to format my code following ESLint, Prettier config whenever I
 
 Go to VSCode Preferences then add the following settings:
 
-```json
-// default prettier config for all projects
-"prettier.semi": false,
-"prettier.singleQuote": true,
-"prettier.tabWidth": 4,
-// always fix on save
-"editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-},
-// always use Prettier config to format JavaScript
-"[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+```jsonc
+{
+    // default prettier config for all projects
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    // always fix on save
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    // always use Prettier config to format JavaScript
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
 ```
 
@@ -131,11 +133,11 @@ Go to VSCode Preferences then add the following settings:
 
 Before
 
-![before](https://github.com/buianhthang/anhthang.org/blob/master/img/prettier-before.png)
+![before](https://raw.githubusercontent.com/buianhthang/anhthang.org/master/img/prettier-before.png)
 
 After
 
-![after](https://github.com/buianhthang/anhthang.org/blob/master/img/prettier-after.png)
+![after](https://raw.githubusercontent.com/buianhthang/anhthang.org/master/img/prettier-after.png)
 
 
 🥳 **Watch the magic of Prettier**
