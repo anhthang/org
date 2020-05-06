@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "XML to JSON - VSCode extension"
-date: 2017-11-03
 comments: false
 categories: [code extensions, xml2json, xmlbuilder]
 link: https://marketplace.visualstudio.com/items?itemName=buianhthang.xml2json

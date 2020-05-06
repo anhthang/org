@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "pino-redis - first contribution"
-date: 2017-10-14
 comments: false
 categories: [open source]
 permalink: 2017/10/14/first-contribution

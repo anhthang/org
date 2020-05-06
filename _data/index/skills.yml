@@ -4,3 +4,4 @@ label: Ability
 id : cs
 aspects: Node.js, React, Docker, Kubernetes, AWS/GCP
 percentage: 90, 70, 65, 75, 70
+color: "#6cc24a, #00d8ff, #0db7ed, #405de6, #ff9900"

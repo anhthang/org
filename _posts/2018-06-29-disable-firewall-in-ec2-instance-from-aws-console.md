@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Disable firewall in EC2 instance from AWS Console"
-date: 2018-06-29
 comments: false
 categories: [disable firewall, ec2]
 permalink: 2018/06/29-disable-firewall-in-ec2-instance-from-aws-console

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "VSCode extensions for developers"
-date: 2020-04-24
 comments: false
 categories: [code extensions]
 permalink: 2020/04/24-vscode-extensions-for-developers

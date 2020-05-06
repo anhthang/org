@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Dreaming keyboard layout"
-date: 2020-01-08
 comments: false
 categories: [mechanical keyboard]
 permalink: 2020/01/08-dream-mechanical-keyboard-layout

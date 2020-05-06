@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Host ASP.NET Core on Linux with Nginx"
-date: 2018-02-03
 comments: false
 categories: [aspnetcore, nginx]
 permalink: 2018/02/03-host-asp-net-core-on-linux-with-nginx

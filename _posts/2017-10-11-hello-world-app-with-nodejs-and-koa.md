@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Hello World! app with Node.js and Koa"
-date: 2017-10-11
 comments: false
 categories: [hello world, koa, nodejs]
 permalink: 2017/10/11/hello-world-app-with-nodejs-and-koa
