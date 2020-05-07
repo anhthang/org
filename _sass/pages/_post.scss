@@ -15,7 +15,7 @@
     padding: 50px 30px 0;
   }
   @include media-query($medium-screen) {
-    min-height: 100vh;
+    min-height: calc(100vh - 40px);
     overflow-y: scroll;
     position: initial;
     top: 0;
@@ -187,111 +187,43 @@ a.read-more {
     }
   }
 }
+
 .twitter {
-  background-color: $twitter;
-  color: $white;
-  border-color: $twitter;
+  color: $dark-text-color;
   &:visited {
-    color: $white;
-    border-color: $twitter;
+    color: $twitter;
   }
   &:hover {
-    background-color: $white;
     color: $twitter;
-    border-color: $twitter;
-  }
-  @include dark-mode() {
-    background-color: $dark-background-color;
-    color: $twitter;
-    &:visited {
-      color: $white;
-      border-color: $twitter;
-    }
-    &:hover {
-      background-color: $twitter;
-      color: $white;
-      border-color: $twitter;
-    }
   }
 }
+
 .facebook {
-  background-color: $facebook;
-  color: $white;
-  border-color: $facebook;
+  color: $dark-text-color;
   &:visited {
-    color: $white;
-    border-color: $facebook;
+    color: $facebook;
   }
   &:hover {
-    background-color: $white;
     color: $facebook;
-    border-color: $facebook;
-  }
-  @include dark-mode() {
-    background-color: $dark-background-color;
-    color: $facebook;
-    &:visited {
-      color: $white;
-      border-color: $facebook;
-    }
-    &:hover {
-      background-color: $facebook;
-      color: $white;
-      border-color: $facebook;
-    }
   }
 }
+
 .hacker-news {
-  background-color: $hacker-news;
-  color: $white;
-  border-color: $hacker-news;
+  color: $dark-text-color;
   &:visited {
-    color: $white;
-    border-color: $hacker-news;
+    color: $hacker-news;
   }
   &:hover {
-    background-color: $white;
     color: $hacker-news;
-    border-color: $hacker-news;
-  }
-  @include dark-mode() {
-    background-color: $dark-background-color;
-    color: $hacker-news;
-    &:visited {
-      color: $white;
-      border-color: $hacker-news;
-    }
-    &:hover {
-      background-color: $hacker-news;
-      color: $white;
-      border-color: $hacker-news;
-    }
   }
 }
+
 .reddit {
-  background-color: $reddit;
-  color: $white;
-  border-color: $reddit;
+  color: $dark-text-color;
   &:visited {
-    color: $white;
-    border-color: $reddit;
+    color: $reddit;
   }
   &:hover {
-    background-color: $white;
     color: $reddit;
-    border-color: $reddit;
-  }
-  @include dark-mode() {
-    background-color: $dark-background-color;
-    color: $reddit;
-    &:visited {
-      color: $white;
-      border-color: $reddit;
-    }
-    &:hover {
-      background-color: $reddit;
-      color: $white;
-      border-color: $reddit;
-    }
   }
 }
