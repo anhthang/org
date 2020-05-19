@@ -28,11 +28,15 @@ A customizable extension for colorizing matching brackets
 
 Integrates ESLint JavaScript into VS Code.
 
-4. [gitflow](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow)
+4. [gitflow](https://marketplace.visualstudio.com/items?itemName=buianhthang.gitflow)
+
+> Forked from [vector-of-bool/vscode-gitflow](https://github.com/vector-of-bool/vscode-gitflow)
 
 Gitflow integration and support in Visual Studio Code
 
-![gitflow](https://github.com/vector-of-bool/vscode-gitflow/raw/develop/res/gitflow.png)
+*This is the only one with workspace support*
+
+![gitflow](https://github.com/anhthang/vscode-gitflow/raw/develop/res/gitflow.png)
 
 5. [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
