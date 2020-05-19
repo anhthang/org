@@ -2,12 +2,12 @@ open_source:
   - name: soap-converter
     descr: "Transform SOAP/WSDL descriptions to other formats."
     image:
-    github: https://github.com/buianhthang/soap-converter
+    github: https://github.com/anhthang/soap-converter
   - name: joi-array-extensions
     descr: "Joi extensions for extra array rules."
     image:
-    github: https://github.com/buianhthang/joi-array-extensions
+    github: https://github.com/anhthang/joi-array-extensions
   - name: pino-redis
     descr: "load pino logs into redis"
     image:
-    github: https://github.com/buianhthang/pino-redis
+    github: https://github.com/anhthang/pino-redis

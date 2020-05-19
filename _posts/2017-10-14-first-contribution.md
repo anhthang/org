@@ -15,4 +15,4 @@ It's my first contribution to the open source community. You can find via [npm] 
 [pino]: https://github.com/pinojs/pino
 [#307]: https://github.com/pinojs/pino/pull/307
 [npm]: https://www.npmjs.com/package/pino-redis
-[GitHub]: https://github.com/buianhthang/pino-redis
+[GitHub]: https://github.com/anhthang/pino-redis

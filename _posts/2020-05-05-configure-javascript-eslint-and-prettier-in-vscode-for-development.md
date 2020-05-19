@@ -137,11 +137,11 @@ Go to VSCode Preferences then add the following settings:
 
 Before
 
-![before](https://raw.githubusercontent.com/buianhthang/anhthang.org/master/img/prettier-before.png)
+![before](https://raw.githubusercontent.com/anhthang/org/master/img/prettier-before.png)
 
 After
 
-![after](https://raw.githubusercontent.com/buianhthang/anhthang.org/master/img/prettier-after.png)
+![after](https://raw.githubusercontent.com/anhthang/org/master/img/prettier-after.png)
 
 
 🥳 **Watch the magic of Prettier**
