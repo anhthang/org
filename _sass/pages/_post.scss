@@ -2,7 +2,7 @@
 .post-listing {
   background-color: $white;
   position: absolute;
-  top: 190px;
+  top: 180px;
   z-index: 233;
   width: 100%;
   padding: 20px 20px 0;
@@ -55,9 +55,8 @@ section.post {
   }
 }
 
-// Post title
 .post-title {
-
+  font-size: $font-size-h1;
 }
 
 .post-title-link {

@@ -5,6 +5,14 @@ layout: default
 {% for post in site.posts %}
 <section class="post">
   <header class="post-header">
+    <h4>
+      <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title | escape }}">{{ post.title }}</a>
+      {% if post.link %}
+      <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title | escape }}"><i
+          class="fas fa-external-link-alt"></i></a>
+      {% endif %}
+    </h4>
+
     <p class="post-meta">
       <span class="post-date">
         {{ post.date | date: "%-d %b %Y" }}
@@ -19,13 +27,6 @@ layout: default
       {% endfor %}
       {% endif %}
     </p>
-    <h4>
-      <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title | escape }}">{{ post.title }}</a>
-      {% if post.link %}
-      <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title | escape }}"><i
-          class="fas fa-external-link-alt"></i></a>
-      {% endif %}
-    </h4>
 
     {% if post.author %}
     {% assign author = site.data.authors[post.author] %}
