@@ -9,15 +9,33 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
         persist-credentials: false
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.6'
+
+    - name: Install bundler and set up git ⚙️
+      run: |
+        gem update --system
+        gem install bundler
+        git config --global user.name "$(git --no-pager show --no-patch --format='%an')"
+        git config --global user.email "$(git --no-pager show --no-patch --format='%ae')"
+    
+    - name: Build site 🏗
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      run: |
+        git clone -b gh-pages --depth 1 "https://${GITHUB_TOKEN}@github.com/anhthang/org.git" _site >/dev/null 2>&1
+        rm -r _site/*
+        bundle exec jekyll build
 
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        BASE_BRANCH: master
-        FOLDER: .
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      run: |
+        cd _site
+        git add -A
+        git commit -m "Updated to $(git rev-parse --short $(git --no-pager show --no-patch --format='%h')) at $(date -u +'%Y-%m-%d %H:%M:%S %Z')"
+        git push "https://${GITHUB_TOKEN}@github.com/anhthang/org.git" gh-pages >/dev/null 2>&1
