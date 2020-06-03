@@ -37,5 +37,5 @@ jobs:
       run: |
         cd _site
         git add -A
-        git commit -m "Updated to $(git rev-parse --short $(git --no-pager show --no-patch --format='%h')) at $(date -u +'%Y-%m-%d %H:%M:%S %Z')"
+        git commit -m "Updated to $(git rev-parse --short HEAD^) at $(date -u +'%Y-%m-%d %H:%M:%S %Z')"
         git push "https://${GITHUB_TOKEN}@github.com/anhthang/org.git" gh-pages >/dev/null 2>&1
