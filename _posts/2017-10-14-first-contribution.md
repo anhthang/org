@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "pino-redis - first contribution"
+title: 'pino-redis - first contribution'
 comments: false
 categories: [open source]
-permalink: 2017/10/14/first-contribution
 ---
 
 Few months ago, I created a small project called _pino-redis_, a "transport" for the pino logger, receives [pino] logs from `stdin` and transform them into Redis.
@@ -15,4 +14,4 @@ It's my first contribution to the open source community. You can find via [npm] 
 [pino]: https://github.com/pinojs/pino
 [#307]: https://github.com/pinojs/pino/pull/307
 [npm]: https://www.npmjs.com/package/pino-redis
-[GitHub]: https://github.com/anhthang/pino-redis
+[github]: https://github.com/anhthang/pino-redis

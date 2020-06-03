@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Running a Docker container as non-root user"
+title: 'Running a Docker container as non-root user'
 comments: false
 categories: [docker]
-permalink: 2018/07/07-running-a-docker-container-as-non-root-user
 ---
 
 By default, Docker container will be run as root user, this can cause us pain. We could tell Docker to run as an ordinary user instead of `root`.

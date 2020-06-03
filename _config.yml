@@ -6,23 +6,23 @@
 title: Anh Thang
 email:
 description: Something to remember...
-url: "https://anhthang.org" # the base hostname & protocol for your site
-keywords: ["blog", "jekyll"]
+url: 'https://anhthang.org' # the base hostname & protocol for your site
+keywords: ['blog', 'jekyll']
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
-timezone:          Asia/Ho_Chi_Minh
-markdown:          CommonMarkGhPages
-highlighter:       rouge
+timezone: Asia/Ho_Chi_Minh
+markdown: CommonMarkGhPages
+highlighter: rouge
 excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+permalink: /:year/:month/:day/:title
 
 commonmark:
-  options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+  options: ['SMART', 'FOOTNOTES']
+  extensions: ['strikethrough', 'autolink', 'table', 'tagfilter']
 
 # kramdown:
 #   auto_ids: true
@@ -39,9 +39,9 @@ commonmark:
 owner:
   name: Anh Thang Bui
   avatar: avatar.jpg
-  job: "Node.js Developer"
-  bio: "Something to remember..."
-  email: "buianhthang89@gmail.com"
+  job: 'Node.js Developer'
+  bio: 'Something to remember...'
+  email: 'buianhthang89@gmail.com'
   disqus-shortname:
   twitter: anhthangbui
   facebook: congiothienbinh

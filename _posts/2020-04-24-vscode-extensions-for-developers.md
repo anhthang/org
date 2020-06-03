@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "VSCode extensions for developers"
+title: 'VSCode extensions for developers'
 comments: false
 categories: [code extensions]
-permalink: 2020/04/24-vscode-extensions-for-developers
 ---
 
 > Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity)
@@ -16,13 +15,11 @@ Improve your code commenting by annotating with alert, informational, TODOs, and
 
 ![Better Comments](https://github.com/aaron-bond/better-comments/raw/master/images/better-comments.PNG)
 
-
 2. [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
 
 A customizable extension for colorizing matching brackets
 
 ![Bracket](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2/raw/develop/images/example.png)
-
 
 3. [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
@@ -34,7 +31,7 @@ Integrates ESLint JavaScript into VS Code.
 
 Gitflow integration and support in Visual Studio Code
 
-*This is the only one with workspace support*
+_This is the only one with workspace support_
 
 ![gitflow](https://github.com/anhthang/vscode-gitflow/raw/develop/res/gitflow.png)
 
@@ -63,8 +60,9 @@ Convert XML from clipboard or current document/selection to JSON
 XML Formatting, XQuery, and XPath Tools for Visual Studio Code
 
 **Some other extensions can help you increase your productivity:**
-- [Duplicate action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate) - Ability to duplicate files in VS Code
-- [Gitmoji Commit](https://marketplace.visualstudio.com/items?itemName=benjaminadk.emojis4git) - A utility to compose GitHub commit messages with emojis. Based on Gitmoji.
-- [Unique Lines](https://marketplace.visualstudio.com/items?itemName=bibhasdn.unique-lines) - Keep unique lines of text and remove duplicates from current selection. Also includes a command to shuffle currently selected lines.
 
-*Happy Coding~*
+-   [Duplicate action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate) - Ability to duplicate files in VS Code
+-   [Gitmoji Commit](https://marketplace.visualstudio.com/items?itemName=benjaminadk.emojis4git) - A utility to compose GitHub commit messages with emojis. Based on Gitmoji.
+-   [Unique Lines](https://marketplace.visualstudio.com/items?itemName=bibhasdn.unique-lines) - Keep unique lines of text and remove duplicates from current selection. Also includes a command to shuffle currently selected lines.
+
+_Happy Coding~_

@@ -1,24 +1,23 @@
 ---
 layout: post
-title: "Configure JavaScript, ESLint and Prettier in VSCode for development"
+title: 'Configure JavaScript, ESLint and Prettier in VSCode for development'
 comments: false
 categories: [eslint, prettier, javascript]
-permalink: 2020/05/05-configure-javascript-eslint-and-prettier-in-vscode-for-development
 ---
 
 This short guide will provide you a consistent and reuseable development workflow for your new or existing projects, especially in JavaScript. You can increase your code quality and reduce the time spent on debugging. I will show you how to configure VSCode to handle code formatting, linting and type checking now.
 
 > Testing is outside the scope, but it's highly recommended. You should check every changed files before commit
 
-*You can skip ahead to the next step if you have any already*
+_You can skip ahead to the next step if you have any already_
 
 ### Getting Started
 
 Open VSCode and install following extensions (what I shared in previous post, it's [here](https://anhthang.org/2020/04/24-vscode-extensions-for-developers))
 
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+-   [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+-   [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ### ESLint and Prettier Setup
 
@@ -27,23 +26,18 @@ Install following npm packages for your project as dev dependencies. I use `yarn
 ```bash
 yarn add --dev eslint eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-prettier husky lint-staged prettier
 ```
-* added **eslint**, **prettier**
-* added **eslint-config-prettier** so **eslint** and **prettier** won’t fight over code formatting rules
-* added **eslint-config-airbnb-base** to use Airbnb's base JS .eslintrc as an extensible shared config. You can use other base like: StandardJS
-* Prettier will auto-format your code based on it’s rules. **It's amazingggg!** 🤩 *Let's install and enjoy your life.*
+
+-   added **eslint**, **prettier**
+-   added **eslint-config-prettier** so **eslint** and **prettier** won’t fight over code formatting rules
+-   added **eslint-config-airbnb-base** to use Airbnb's base JS .eslintrc as an extensible shared config. You can use other base like: StandardJS
+-   Prettier will auto-format your code based on it’s rules. **It's amazingggg!** 🤩 _Let's install and enjoy your life._
 
 Open the `.eslintrc.json` file and configure it like so:
 
 ```json
 {
-    "extends": [
-        "airbnb-base",
-        "prettier"
-    ],
-    "plugins": [
-        "import",
-        "prettier"
-    ],
+    "extends": ["airbnb-base", "prettier"],
+    "plugins": ["import", "prettier"],
     "rules": {
         "eqeqeq": ["warn"],
         "radix": ["warn"],
@@ -52,16 +46,20 @@ Open the `.eslintrc.json` file and configure it like so:
         "no-restricted-syntax": ["warn"],
         "no-param-reassign": ["error", { "props": false }],
         "import/no-dynamic-require": ["warn"],
-        "prettier/prettier": ["error", {
-            "singleQuote": true,
-            "semi": false,
-            "tabWidth": 4
-        }]
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true,
+                "semi": false,
+                "tabWidth": 4
+            }
+        ]
     }
 }
 ```
 
 You can create a file name **.prettierrc** and write it own rules
+
 ```json
 {
     "singleQuote": true,
@@ -70,7 +68,7 @@ You can create a file name **.prettierrc** and write it own rules
 }
 ```
 
-*This section is my preferences. You're free to add your own rules.*
+_This section is my preferences. You're free to add your own rules._
 
 ### Lint your Code
 
@@ -83,6 +81,7 @@ Add the following to `package.json` file
     }
 }
 ```
+
 Husky can prevent bad `git commit`, `git push` and more 🐶 `woof`!
 
 ```json
@@ -93,8 +92,8 @@ Husky can prevent bad `git commit`, `git push` and more 🐶 `woof`!
     ]
 }
 ```
-Run linters against staged git files and don't let 💩 slip into your code base!
 
+Run linters against staged git files and don't let 💩 slip into your code base!
 
 ```json
 "scripts": {
@@ -102,6 +101,7 @@ Run linters against staged git files and don't let 💩 slip into your code base
     "lint": "eslint src --ext .js,.tsx,.ts --fix"
 }
 ```
+
 With this lint script, you can run from the terminal (`yarn lint` or `npm run lint`) and enjoy fixing linter errors!
 
 You can find more details about **eslint** options [here](https://eslint.org/docs/user-guide/command-line-interface)
@@ -112,7 +112,8 @@ Now I want VSCode to format my code following ESLint, Prettier config whenever I
 
 Go to VSCode Preferences then add the following settings:
 
-* Set Prettier is default formatter and config for all JavaScript projects
+-   Set Prettier is default formatter and config for all JavaScript projects
+
 ```json
 {
     "prettier.semi": false,
@@ -124,7 +125,8 @@ Go to VSCode Preferences then add the following settings:
 }
 ```
 
-* Let VSCode always fix after saving a file
+-   Let VSCode always fix after saving a file
+
 ```json
 {
     "editor.codeActionsOnSave": {
@@ -143,7 +145,6 @@ After
 
 ![after](https://raw.githubusercontent.com/anhthang/org/master/img/prettier-after.png)
 
-
 🥳 **Watch the magic of Prettier**
 
-*Happy Coding~*
+_Happy Coding~_

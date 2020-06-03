@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Host ASP.NET Core on Linux with Nginx"
+title: 'Host ASP.NET Core on Linux with Nginx'
 comments: false
 categories: [aspnetcore, nginx]
-permalink: 2018/02/03-host-asp-net-core-on-linux-with-nginx
 ---
 
 > This is a helper document guide how to setup, config and deploy an .NET Core Web Engine Hosting on an Ubuntu Server.
@@ -15,7 +14,9 @@ Run below command and input password
 ```bash
 ssh username@hosting/ip
 ```
+
 You can copy your local ssh key to server and no need password to login next time
+
 ```bash
 ssh-copy-id -i .ssh/id_rsa username@hosting/ip
 ```
@@ -96,6 +97,7 @@ Create service file
 ```bash
 sudo nano /etc/systemd/system/service_name.service
 ```
+
 and write the content like below
 
 ```ini
@@ -115,6 +117,7 @@ Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 [Install]
 WantedBy=multi-user.target
 ```
+
 _Note: If the user www-data isn't used by the configuration, the user defined here must be created first and given proper ownership for files._
 
 Save the file and enable the service.
